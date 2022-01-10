@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Splash_Screen</string>
+
+    <!--  Button  -->
+    <string name="skip_btn">Skip</string>
+    <string name="next_btn">Next</string>
+    <string name="let_get_btb">Lets Get Started</string>
+    <!--  Mainpage  -->
+    <string name="menu_01">Menu_01</string>
+    <string name="menu_02">Menu_02</string>
+    <string name="menu_03">Menu_03</string>
+    <string name="menu_04">Menu_04</string>
+
+    <string name="order_online_collect">Order online collect</string>
+    <string name="order_online_description">Available when you purchase any new iPhone, iPad</string>
+    <string name="product_viewed">Prodcut Viewed</string>
+    <string name="see_more">see more</string>
+    <string name="search">search</string>
+
+</resources>

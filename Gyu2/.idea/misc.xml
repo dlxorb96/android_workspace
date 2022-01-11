@@ -3,7 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/android_workspace/Gyu2/app/src/main/res/layout/activity_main.xml" value="0.1796875" />
+        <entry key="..\:/android_workspace/Gyu2/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.36666666666666664" />
+        <entry key="..\:/android_workspace/Gyu2/app/src/main/res/drawable/ic_launcher_background.xml" value="0.36666666666666664" />
+        <entry key="..\:/android_workspace/Gyu2/app/src/main/res/drawable/onboarding_get_started.xml" value="0.36666666666666664" />
+        <entry key="..\:/android_workspace/Gyu2/app/src/main/res/drawable/round.xml" value="0.21041666666666667" />
+        <entry key="..\:/android_workspace/Gyu2/app/src/main/res/layout/activity_home.xml" value="0.22" />
+        <entry key="..\:/android_workspace/Gyu2/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/android_workspace/Gyu2/app/src/main/res/layout/activity_on_boarding.xml" value="0.35052083333333334" />
       </map>
     </option>
   </component>

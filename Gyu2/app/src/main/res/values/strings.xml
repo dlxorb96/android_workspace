@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Gyu2</string>
+
+    <!--  AD STRING  -->
+    <string name="first_ad_name">Fresh Orange</string>>
+    <string name="second_ad_name">Fresh Apple</string>>
+    <string name="third_ad_name">Fresh Banana</string>>
+    <string name="first_ad_dis">Get Up To 70% OFF</string>>
+    <string name="second_ad_dis">Get Up To 40% OFF</string>>
+    <string name="third_ad_dis">Get Up To 20% OFF</string>>
+
+
 </resources>

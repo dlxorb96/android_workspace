@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Gyu2">
         <activity
+            android:name=".Join"
+            android:exported="false" />
+        <activity
+            android:name=".LogIn"
+            android:exported="false" />
+        <activity
             android:name=".Home"
             android:exported="false" />
         <activity

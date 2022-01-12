@@ -1,83 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Home"
-    android:background="@color/white">
-    <!--당근-->
-    <ImageView
-        android:id="@+id/image_carrot"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/carrot"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="40dp" />
-    <!--당근 밑에 맵이랑 text-->
-    <LinearLayout
-        android:id="@+id/board_map"
-        android:layout_below="@+id/image_carrot"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-        android:orientation="horizontal">
-        <!--map 쪼그만 이미지-->
-        <androidx.constraintlayout.utils.widget.ImageFilterView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/map" />
-        <!--map 이미지 옆에 있는 text-->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:text="Dhaka, Banassre"
-            android:textColor="@color/black"/>
+    tools:context=".Home">
 
-    </LinearLayout>
-    <!--search 바-->
     <RelativeLayout
-        android:layout_marginTop="15dp"
-        android:layout_below="@+id/board_map"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        android:background="@color/white">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:background="@drawable/round">
+        <!--당근-->
+        <ImageView
+            android:id="@+id/image_carrot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/carrot"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp" />
 
+        <!--당근 밑에 맵이랑 text-->
+        <LinearLayout
+            android:id="@+id/board_map"
+            android:layout_below="@+id/image_carrot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <!--map 쪼그만 이미지-->
+            <androidx.constraintlayout.utils.widget.ImageFilterView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/map" />
+            <!--map 이미지 옆에 있는 text-->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="20dp"
-                android:fontFamily="@font/lato_thin"
-                android:text="search store"
-                android:textColor="#939393"
-                android:textSize="18sp" />
+                android:layout_marginLeft="10dp"
+                android:text="Dhaka, Banassre"
+                android:textColor="@color/black"/>
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
+        </LinearLayout>
+
+        <!--search 바-->
+        <RelativeLayout
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/board_map"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
-                android:src="@drawable/search_icon" />
+                android:background="@drawable/round">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/lato_thin"
+                    android:text="search store"
+                    android:textColor="#939393"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/search_icon" />
+
+
+            </RelativeLayout>
+
+
+
 
 
         </RelativeLayout>
+
+        <!--여기에 회전하는 걸 만들겠다-->
 
 
 
 
 
     </RelativeLayout>
-    <!--여기에 회전하는 걸 만들겠다-->
 
 
-</RelativeLayout>
+
+</ScrollView>

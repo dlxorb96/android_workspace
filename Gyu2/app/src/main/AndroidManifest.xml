@@ -19,13 +19,13 @@
             android:name=".LogIn"
             android:exported="false" />
         <activity
-            android:name=".Home"
+            android:name=".ProductDetail"
             android:exported="false" />
         <activity
             android:name=".OnBoarding"
             android:exported="false" />
         <activity
-            android:name=".ProductDetail"
+            android:name=".Home"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

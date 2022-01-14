@@ -9,7 +9,8 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/white">
+        android:background="@color/white"
+        android:padding="20dp">
 
         <!--당근-->
         <ImageView
@@ -18,7 +19,7 @@
             android:layout_height="wrap_content"
             android:src="@drawable/carrot"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="40dp" />
+            android:layout_marginTop="20dp" />
 
         <!--당근 밑에 맵이랑 text-->
         <LinearLayout
@@ -30,7 +31,7 @@
             android:layout_marginTop="10dp"
             android:orientation="horizontal">
             <!--map 쪼그만 이미지-->
-            <androidx.constraintlayout.utils.widget.ImageFilterView
+            <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/map" />
@@ -46,46 +47,157 @@
 
         <!--search 바-->
         <RelativeLayout
+            android:id="@+id/home_search_bar"
             android:layout_marginTop="15dp"
             android:layout_below="@+id/board_map"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <RelativeLayout
+            <EditText
+                android:id="@+id/search_bar2"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginLeft="20dp"
+                android:layout_height="40dp"
+                android:background="@drawable/round"
+                android:paddingLeft="20dp"
+                android:hint="search store"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
                 android:layout_marginRight="20dp"
-                android:background="@drawable/round">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:layout_marginLeft="20dp"
-                    android:fontFamily="@font/lato_thin"
-                    android:text="search store"
-                    android:textColor="#939393"
-                    android:textSize="18sp" />
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:layout_centerVertical="true"
-                    android:layout_marginRight="20dp"
-                    android:src="@drawable/search_icon" />
-
-
-            </RelativeLayout>
-
-
-
-
+                android:src="@drawable/search_icon" />
 
         </RelativeLayout>
 
-        <!--여기에 회전하는 걸 만들겠다-->
+        <!--여기에 회전하는 걸 만들겠다 일단 보류-->
+        <ImageView
+            android:id="@+id/home_banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/home_search_bar"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/banner" />
+
+        <!-- exclusive_offer -->
+        <RelativeLayout
+            android:id="@+id/exclusive_offer"
+            android:layout_below="@+id/home_banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato_black"
+                android:text="Exclusive Offer"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="See all"
+                android:textSize="15sp"
+                android:fontFamily="@font/lato_regular"
+                android:layout_centerVertical="true"
+                android:textColor="@color/main_color"/>
+
+        </RelativeLayout>
+
+        <!--exclusive_offer recycler view-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/exclusive_offer_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="245dp"
+            android:layout_below="@+id/exclusive_offer"
+            android:layout_marginBottom="15dp" />
+
+        <!--best selling-->
+        <RelativeLayout
+            android:id="@+id/best_selling"
+            android:layout_below="@+id/exclusive_offer_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato_black"
+                android:text="Best Selling"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="See all"
+                android:textSize="15sp"
+                android:fontFamily="@font/lato_regular"
+                android:layout_centerVertical="true"
+                android:textColor="@color/main_color"/>
+
+        </RelativeLayout>
+
+        <!--best selling recycler view-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/best_selling_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="245dp"
+            android:layout_below="@+id/best_selling"
+            android:layout_marginBottom="15dp" />
+
+        <!--Groceries-->
+        <RelativeLayout
+            android:id="@+id/groceries"
+            android:layout_below="@+id/best_selling_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato_black"
+                android:text="Groceries"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="See all"
+                android:textSize="15sp"
+                android:fontFamily="@font/lato_regular"
+                android:layout_centerVertical="true"
+                android:textColor="@color/main_color"/>
+
+        </RelativeLayout>
+
+        <!--Groceries recycler view 가로-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/Groceries_recycler1"
+            android:layout_below="@+id/groceries"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="15dp"/>
+
+        <!--Groceries recycler view 세로-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/Groceries_recycler2"
+            android:layout_below="@+id/Groceries_recycler1"
+            android:layout_width="match_parent"
+            android:layout_height="245dp"
+            android:layout_marginBottom="60dp"/>
 
 
 

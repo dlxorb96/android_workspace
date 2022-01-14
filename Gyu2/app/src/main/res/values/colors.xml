@@ -12,4 +12,12 @@
     <color name="main_color">#53B175</color>
 
 
+
+    <!--recycler backgrouncolor-->
+    <color name="bgColor1">#DAC7FB</color>
+    <color name="bgColor2">#A1D5FF</color>
+    <color name="bgColor3">#A4FFB4</color>
+    <color name="bgColor4">#FFF7B1</color>
+
+
 </resources>

@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Gyu2">
         <activity
+            android:name=".Beverage"
+            android:exported="false" />
+        <activity
+            android:name=".Home"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity
@@ -25,7 +31,7 @@
             android:name=".OnBoarding"
             android:exported="false" />
         <activity
-            android:name=".Home"
+            android:name=".Explore"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

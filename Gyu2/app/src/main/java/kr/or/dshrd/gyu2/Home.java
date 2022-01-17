@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
@@ -24,6 +25,8 @@ public class Home extends AppCompatActivity {
 
     RecyclerView exclusive_offer_recyclerview, best_selling_recycler, Groceries_recycler1, Groceries_recycler2;
     RecyclerView.Adapter adapter;
+//    private GradientDrawable color1, color2, color3, color4;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -77,8 +80,7 @@ public class Home extends AppCompatActivity {
     }
 
     private void Groceries_recycler1() {
-
-        Drawable color1, color2, color3, color4;
+        GradientDrawable color1, color2, color3, color4;
 
         ArrayList<GroceryHelperClassTop> groceryTopLocation = new ArrayList<>();
 
@@ -87,16 +89,16 @@ public class Home extends AppCompatActivity {
         Groceries_recycler1.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
         Groceries_recycler1.setAdapter(adapter);
 
-        color1 = new GradientDrawable(GradientDrawable.Orientation.LEFT_RIGHT, new int[]{0xFFDAC7FB});
-        color2 = new GradientDrawable(GradientDrawable.Orientation.LEFT_RIGHT, new int[]{0xFFA1D5FF});
-        color3 = new GradientDrawable(GradientDrawable.Orientation.LEFT_RIGHT, new int[]{0xFFA4FFB4});
-        color4 = new GradientDrawable(GradientDrawable.Orientation.LEFT_RIGHT, new int[]{0xFFFFF7B1});
+        color1 = new GradientDrawable(GradientDrawable.Orientation.LEFT_RIGHT, new int[]{0xFFDAC7FB, 0xFFDAC7FB});
+        color2 = new GradientDrawable(GradientDrawable.Orientation.LEFT_RIGHT, new int[]{0xFFA1D5FF,0xFFA1D5FF});
+        color3 = new GradientDrawable(GradientDrawable.Orientation.LEFT_RIGHT, new int[]{0xFFA4FFB4,0xFFA4FFB4});
+        color4 = new GradientDrawable(GradientDrawable.Orientation.LEFT_RIGHT, new int[]{0xFFFFF7B1,0xFFFFF7B1});
 
         //잡아넣는 작업
-        groceryTopLocation.add(new GroceryHelperClassTop(R.drawable.beef_bone, "I like a beef_bone", color1));
-        groceryTopLocation.add(new GroceryHelperClassTop(R.drawable.broller_chicken, "I love chicken!",color2));
-        groceryTopLocation.add(new GroceryHelperClassTop(R.drawable.beef_bone, "please take me home",color3));
-        groceryTopLocation.add(new GroceryHelperClassTop(R.drawable.broller_chicken, "today is Friday",color4));
+        groceryTopLocation.add(new GroceryHelperClassTop(R.drawable.beef_bone, "beef bone", color1));
+        groceryTopLocation.add(new GroceryHelperClassTop(R.drawable.broller_chicken, "chicken!",color2));
+        groceryTopLocation.add(new GroceryHelperClassTop(R.drawable.beef_bone, "home",color3));
+        groceryTopLocation.add(new GroceryHelperClassTop(R.drawable.broller_chicken, "Friday",color4));
 
     }
 

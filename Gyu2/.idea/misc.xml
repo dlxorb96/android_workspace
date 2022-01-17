@@ -4,12 +4,21 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/android_workspace/Gyu2/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.36666666666666664" />
+        <entry key="..\:/android_workspace/Gyu2/app/src/main/res/drawable/beverageround_1.xml" value="0.36102564102564105" />
         <entry key="..\:/android_workspace/Gyu2/app/src/main/res/drawable/countround.xml" value="0.21041666666666667" />
+        <entry key="..\:/android_workspace/Gyu2/app/src/main/res/drawable/explore_round1.xml" value="0.36102564102564105" />
+        <entry key="..\:/android_workspace/Gyu2/app/src/main/res/drawable/explore_round2.xml" value="0.36102564102564105" />
+        <entry key="..\:/android_workspace/Gyu2/app/src/main/res/drawable/explore_round3.xml" value="0.36102564102564105" />
+        <entry key="..\:/android_workspace/Gyu2/app/src/main/res/drawable/explore_round4.xml" value="0.36102564102564105" />
+        <entry key="..\:/android_workspace/Gyu2/app/src/main/res/drawable/explore_round5.xml" value="0.36102564102564105" />
+        <entry key="..\:/android_workspace/Gyu2/app/src/main/res/drawable/explore_round6.xml" value="0.36102564102564105" />
         <entry key="..\:/android_workspace/Gyu2/app/src/main/res/drawable/gray_round.xml" value="0.21041666666666667" />
         <entry key="..\:/android_workspace/Gyu2/app/src/main/res/drawable/halfround.xml" value="0.36666666666666664" />
         <entry key="..\:/android_workspace/Gyu2/app/src/main/res/drawable/ic_launcher_background.xml" value="0.36666666666666664" />
         <entry key="..\:/android_workspace/Gyu2/app/src/main/res/drawable/onboarding_get_started.xml" value="0.36666666666666664" />
         <entry key="..\:/android_workspace/Gyu2/app/src/main/res/drawable/round.xml" value="0.21041666666666667" />
+        <entry key="..\:/android_workspace/Gyu2/app/src/main/res/layout/activity_beverage.xml" value="0.35052083333333334" />
+        <entry key="..\:/android_workspace/Gyu2/app/src/main/res/layout/activity_explore.xml" value="0.25" />
         <entry key="..\:/android_workspace/Gyu2/app/src/main/res/layout/activity_home.xml" value="0.33" />
         <entry key="..\:/android_workspace/Gyu2/app/src/main/res/layout/activity_join.xml" value="0.3463541666666667" />
         <entry key="..\:/android_workspace/Gyu2/app/src/main/res/layout/activity_log_in.xml" value="0.33" />
@@ -20,6 +29,7 @@
         <entry key="..\:/android_workspace/Gyu2/app/src/main/res/layout/activity_sign_in.xml" value="0.33" />
         <entry key="..\:/android_workspace/Gyu2/app/src/main/res/layout/ad_layout.xml" value="0.3463541666666667" />
         <entry key="..\:/android_workspace/Gyu2/app/src/main/res/layout/best_selling_design.xml" value="0.35052083333333334" />
+        <entry key="..\:/android_workspace/Gyu2/app/src/main/res/layout/beverageround_1.xml" value="0.35052083333333334" />
         <entry key="..\:/android_workspace/Gyu2/app/src/main/res/layout/exclusive_design.xml" value="0.5" />
         <entry key="..\:/android_workspace/Gyu2/app/src/main/res/layout/grocery_bot.xml" value="0.35052083333333334" />
         <entry key="..\:/android_workspace/Gyu2/app/src/main/res/layout/grocery_bot_design.xml" value="0.35052083333333334" />

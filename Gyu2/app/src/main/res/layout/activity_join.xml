@@ -129,7 +129,10 @@
                 android:textAlignment="center"
                 android:textSize="26sp"
                 android:textColor="@color/white"
-                android:fontFamily="@font/lato_bold"/>
+                android:fontFamily="@font/lato_bold"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"/>
 
             <RelativeLayout
                 android:layout_width="match_parent"

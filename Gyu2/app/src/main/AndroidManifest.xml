@@ -10,7 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Gyu2">
         <activity
+            android:name=".Favorite"
+            android:exported="false" />
+        <activity
             android:name=".Beverage"
+            android:exported="false" />
+        <activity
+            android:name=".Explore"
+            android:exported="false" />
+        <activity
+            android:name=".LottieAnim"
             android:exported="false" />
         <activity
             android:name=".Home"
@@ -31,7 +40,7 @@
             android:name=".OnBoarding"
             android:exported="false" />
         <activity
-            android:name=".Explore"
+            android:name=".MyCart"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

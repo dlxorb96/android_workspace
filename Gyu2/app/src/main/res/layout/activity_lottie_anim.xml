@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LottieAnim"
+    android:background="@drawable/clipingmask"
+    >
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie"
+
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="25dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/lottie_anim" />
+
+
+    <RelativeLayout
+
+        android:id="@+id/lottie_relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lottie"
+        >
+
+        <TextView
+            android:id="@+id/app_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:fontFamily="@font/lato_bold"
+            android:text="Your Order has been \naccepted"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/test1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/app_title"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/lato_regular"
+            android:text="Your items has been placcd and is on\n
+it’s way to being processed"
+            android:layout_marginBottom="10dp"
+            android:textAlignment="center" />
+
+
+        <TextView
+            android:id="@+id/test2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/test1"
+            android:layout_margin="20dp"
+            android:background="@drawable/onboarding_get_started"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/lato_bold"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:padding="20dp"
+            android:text="track order"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="26sp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/test2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/onboarding_get_started"
+            android:backgroundTint="#00000000"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/lato_bold"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:padding="20dp"
+            android:text="Back to home"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="26sp" />
+
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    tools:context=".MyCart">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--my cart-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="My Cart"
+            android:textSize="25sp"
+            android:fontFamily="@font/lato_bold"
+            android:textColor="@color/black"/>
+        <!--라인-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/line"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"/>
+        <!--first item box-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--cart image-->
+            <ImageView
+                android:id="@+id/pepper_image"
+                android:layout_width="91dp"
+                android:layout_height="85dp"
+                android:layout_marginRight="10dp"
+                android:padding="10dp"
+                android:src="@drawable/pepper" />
+            <!--product name-->
+            <TextView
+                android:layout_toRightOf="@+id/pepper_image"
+                android:id="@+id/pepper_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bell pepper Red"
+                android:fontFamily="@font/lato_bold"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+            <!--kg/price-->
+            <TextView
+                android:id="@+id/pepper_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pepper_title"
+                android:layout_toRightOf="@+id/pepper_image"
+                android:text="1kg, Price"
+                android:fontFamily="@font/lato_regular"
+                android:textColor="@color/gray"
+                android:textSize="15sp"
+                android:layout_marginTop="5dp" />
+            <!--minus-->
+            <RelativeLayout
+                android:id="@+id/pepper_minus"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/pepper_desc"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/pepper_image"
+                android:background="@drawable/countround">
+
+                <TextView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="8dp"
+                    android:text="-"
+
+                    android:textAlignment="center"
+                    android:textSize="25sp"/>
+
+            </RelativeLayout>
+            <!--number-->
+            <TextView
+                android:id="@+id/pepper_number"
+                android:paddingTop="10dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_below="@+id/pepper_desc"
+                android:layout_toRightOf="@+id/pepper_minus"
+                android:fontFamily="@font/lato_bold"
+                android:text="1"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+            <!--plus-->
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/countround"
+                android:layout_toRightOf="@id/pepper_number"
+                android:layout_below="@+id/pepper_desc"
+                android:id="@+id/pepper_plus">
+
+                <TextView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="8dp"
+                    android:text="+"
+                    android:textAlignment="center"
+                    android:textSize="25sp"
+                    android:textColor="@color/main_color"
+                    android:textStyle="bold"/>
+
+            </RelativeLayout>
+            <!--엑스표-->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/close"
+                android:layout_alignParentRight="true"
+                android:padding="10dp"/>
+            <!--가격-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$4.99"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="60dp"
+                android:textSize="20sp"
+                android:fontFamily="@font/lato_black"
+                android:textColor="@color/black"/>
+
+
+        </RelativeLayout>
+
+        <!--라인-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/line"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"/>
+        <!--second item box-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--cart image-->
+            <ImageView
+                android:id="@+id/egg_image"
+                android:layout_width="91dp"
+                android:layout_height="85dp"
+                android:padding="10dp"
+                android:src="@drawable/egg"
+                android:layout_marginRight="10dp"/>
+            <!--product name-->
+            <TextView
+                android:id="@+id/egg_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/egg_image"
+                android:fontFamily="@font/lato_bold"
+                android:text="Egg Chicken Red"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+            <!--kg/price-->
+            <TextView
+                android:id="@+id/egg_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/egg_title"
+                android:layout_toRightOf="@+id/egg_image"
+                android:text="4pcs, Price"
+                android:fontFamily="@font/lato_regular"
+                android:textColor="@color/gray"
+                android:textSize="15sp"
+                android:layout_marginTop="5dp" />
+            <!--minus-->
+            <RelativeLayout
+                android:id="@+id/egg_minus"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/egg_desc"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/egg_image"
+                android:background="@drawable/countround">
+
+                <TextView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="8dp"
+                    android:text="-"
+
+                    android:textAlignment="center"
+                    android:textSize="25sp"/>
+
+            </RelativeLayout>
+            <!--number-->
+            <TextView
+                android:id="@+id/egg_number"
+                android:paddingTop="10dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_below="@+id/egg_desc"
+                android:layout_toRightOf="@+id/egg_minus"
+                android:fontFamily="@font/lato_bold"
+                android:text="1"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+            <!--plus-->
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/countround"
+                android:layout_toRightOf="@id/egg_number"
+                android:layout_below="@+id/egg_desc"
+                android:id="@+id/egg_plus">
+
+                <TextView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="8dp"
+                    android:text="+"
+                    android:textAlignment="center"
+                    android:textSize="25sp"
+                    android:textColor="@color/main_color"
+                    android:textStyle="bold"/>
+
+            </RelativeLayout>
+            <!--엑스표-->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/close"
+                android:layout_alignParentRight="true"
+                android:padding="10dp"/>
+            <!--가격-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/lato_black"
+                android:text="$1.99"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+
+        </RelativeLayout>
+
+        <!--라인-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/line"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"/>
+        <!--third item box-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--cart image-->
+            <ImageView
+                android:id="@+id/Banana_image"
+                android:layout_width="91dp"
+                android:layout_height="85dp"
+                android:layout_marginRight="10dp"
+                android:padding="10dp"
+                android:src="@drawable/banana" />
+            <!--product name-->
+            <TextView
+                android:layout_toRightOf="@+id/Banana_image"
+                android:id="@+id/Banana_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Organic Bananas"
+                android:fontFamily="@font/lato_bold"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+            <!--kg/price-->
+            <TextView
+                android:id="@+id/Banana_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Banana_title"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/Banana_image"
+                android:fontFamily="@font/lato_regular"
+                android:text="12kg, Price"
+                android:textColor="@color/gray"
+                android:textSize="15sp" />
+            <!--minus-->
+            <RelativeLayout
+                android:id="@+id/Banana_minus"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/Banana_desc"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/Banana_image"
+                android:background="@drawable/countround">
+
+                <TextView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="8dp"
+                    android:text="-"
+
+                    android:textAlignment="center"
+                    android:textSize="25sp"/>
+
+            </RelativeLayout>
+            <!--number-->
+            <TextView
+                android:id="@+id/Banana_number"
+                android:paddingTop="10dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_below="@+id/Banana_desc"
+                android:layout_toRightOf="@+id/Banana_minus"
+                android:fontFamily="@font/lato_bold"
+                android:text="1"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+            <!--plus-->
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/countround"
+                android:layout_toRightOf="@id/Banana_number"
+                android:layout_below="@+id/Banana_desc"
+                android:id="@+id/Banana_plus">
+
+                <TextView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="8dp"
+                    android:text="+"
+                    android:textAlignment="center"
+                    android:textSize="25sp"
+                    android:textColor="@color/main_color"
+                    android:textStyle="bold"/>
+
+            </RelativeLayout>
+            <!--엑스표-->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/close"
+                android:layout_alignParentRight="true"
+                android:padding="10dp"/>
+            <!--가격-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/lato_black"
+                android:text="$3.00"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+
+        </RelativeLayout>
+
+        <!--라인-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/line"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"/>
+        <!--fourth item box-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--cart image-->
+            <ImageView
+                android:id="@+id/ginger_image"
+                android:layout_width="91dp"
+                android:layout_height="85dp"
+                android:layout_marginRight="10dp"
+                android:padding="10dp"
+                android:src="@drawable/ginger" />
+            <!--product name-->
+            <TextView
+                android:id="@+id/ginger_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/ginger_image"
+                android:fontFamily="@font/lato_bold"
+                android:text="Ginger"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+            <!--kg/price-->
+            <TextView
+                android:id="@+id/ginger_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ginger_title"
+                android:layout_toRightOf="@+id/ginger_image"
+                android:text="250gm, Price"
+                android:fontFamily="@font/lato_regular"
+                android:textColor="@color/gray"
+                android:textSize="15sp"
+                android:layout_marginTop="5dp" />
+            <!--minus-->
+            <RelativeLayout
+                android:id="@+id/ginger_minus"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/ginger_desc"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/ginger_image"
+                android:background="@drawable/countround">
+
+                <TextView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="8dp"
+                    android:text="-"
+
+                    android:textAlignment="center"
+                    android:textSize="25sp"/>
+
+            </RelativeLayout>
+            <!--number-->
+            <TextView
+                android:id="@+id/ginger_number"
+                android:paddingTop="10dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_below="@+id/ginger_desc"
+                android:layout_toRightOf="@+id/ginger_minus"
+                android:fontFamily="@font/lato_bold"
+                android:text="1"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+            <!--plus-->
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/countround"
+                android:layout_toRightOf="@id/ginger_number"
+                android:layout_below="@+id/ginger_desc"
+                android:id="@+id/ginger_plus">
+
+                <TextView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="8dp"
+                    android:text="+"
+                    android:textAlignment="center"
+                    android:textSize="25sp"
+                    android:textColor="@color/main_color"
+                    android:textStyle="bold"/>
+
+            </RelativeLayout>
+            <!--엑스표-->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/close"
+                android:layout_alignParentRight="true"
+                android:padding="10dp"/>
+            <!--가격-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/lato_black"
+                android:text="$2.99"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+
+        </RelativeLayout>
+        <!--버튼-->
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/onboarding_get_started"
+            android:padding="20dp"
+            android:text="Go to Checkout"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:fontFamily="@font/lato_bold"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+</ScrollView>

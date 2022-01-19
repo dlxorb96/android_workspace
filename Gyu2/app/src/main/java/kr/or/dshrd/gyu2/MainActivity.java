@@ -10,7 +10,7 @@ import android.view.WindowManager;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static int SPLASH_SCREEN = 5000;
+    private static int SPLASH_SCREEN = 2500;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(MainActivity.this, Join.class);
+                Intent intent = new Intent(MainActivity.this, OnBoarding.class);
                 startActivity(intent);
                 finish();
             }

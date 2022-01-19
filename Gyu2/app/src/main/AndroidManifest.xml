@@ -10,22 +10,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Gyu2">
         <activity
-            android:name=".Favorite"
-            android:exported="false" />
-        <activity
-            android:name=".Beverage"
-            android:exported="false" />
-        <activity
-            android:name=".Explore"
-            android:exported="false" />
-        <activity
-            android:name=".LottieAnim"
+            android:name=".MyCart"
             android:exported="false" />
         <activity
             android:name=".Home"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Beverage"
+            android:exported="false" />
+        <activity
+            android:name=".Favorite"
+            android:exported="false" />
+        <activity
+            android:name=".LottieAnim"
+            android:exported="false" />
+        <activity
+            android:name=".Explore"
+            android:exported="false" />
+        <activity
+            android:name=".Account"
             android:exported="false" />
         <activity
             android:name=".Join"
@@ -40,7 +43,7 @@
             android:name=".OnBoarding"
             android:exported="false" />
         <activity
-            android:name=".MyCart"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -2,7 +2,9 @@ package kr.or.dshrd.gyu2;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -14,6 +16,8 @@ public class OnBoarding extends AppCompatActivity {
     Animation topanim, bottomanim;
     ImageView image;
     TextView ttit, ttit2;
+
+    TextView  board;
 
 
     @Override
@@ -37,5 +41,14 @@ public class OnBoarding extends AppCompatActivity {
         image.setAnimation(topanim);
         ttit.setAnimation(topanim);
         ttit2.setAnimation(bottomanim);
+
+        board = findViewById(R.id.board_start);
+        board.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(OnBoarding.this, LogIn.class);
+                startActivity(intent);
+            }
+        });
     }
 }

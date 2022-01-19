@@ -120,6 +120,7 @@
 
 
             <TextView
+                android:id="@+id/sign_btn"
                 android:layout_marginTop="40dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -143,14 +144,14 @@
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
                     android:layout_marginRight="-18dp"
-                    android:layout_toLeftOf="@+id/sign_btn"
+                    android:layout_toLeftOf="@+id/login_btn"
                     android:fontFamily="@font/lato_regular"
                     android:text="Already have an account?"
                     android:textColor="@color/black"
                     android:textSize="12sp" />
 
                 <Button
-                    android:id="@+id/sign_btn"
+                    android:id="@+id/login_btn"
                     android:textSize="15sp"
 
                     android:fontFamily="@font/lato_black"

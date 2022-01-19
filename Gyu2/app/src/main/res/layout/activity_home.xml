@@ -1,210 +1,394 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Home">
 
-    <RelativeLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/white"
-        android:padding="20dp">
+        android:layout_height="wrap_content">
 
-        <!--당근-->
-        <ImageView
-            android:id="@+id/image_carrot"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/carrot"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="20dp" />
 
-        <!--당근 밑에 맵이랑 text-->
-        <LinearLayout
-            android:id="@+id/board_map"
-            android:layout_below="@+id/image_carrot"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="10dp"
-            android:orientation="horizontal">
-            <!--map 쪼그만 이미지-->
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/map" />
-            <!--map 이미지 옆에 있는 text-->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:text="Dhaka, Banassre"
-                android:textColor="@color/black"/>
-
-        </LinearLayout>
-
-        <!--search 바-->
         <RelativeLayout
-            android:id="@+id/home_search_bar"
-            android:layout_marginTop="15dp"
-            android:layout_below="@+id/board_map"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:padding="20dp">
 
-            <EditText
-                android:id="@+id/search_bar2"
+            <!--당근-->
+            <ImageView
+                android:id="@+id/image_carrot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/carrot"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp" />
+
+            <!--당근 밑에 맵이랑 text-->
+            <LinearLayout
+                android:id="@+id/board_map"
+                android:layout_below="@+id/image_carrot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <!--map 쪼그만 이미지-->
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/map" />
+                <!--map 이미지 옆에 있는 text-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Dhaka, Banassre"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+            <!--search 바-->
+            <RelativeLayout
+                android:id="@+id/home_search_bar"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/board_map"
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:background="@drawable/round"
-                android:hint="search store"
-                android:paddingLeft="20dp" />
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/search_bar2"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/round"
+                    android:hint="search store"
+                    android:paddingLeft="20dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/search_icon" />
+
+            </RelativeLayout>
+
+            <!--여기에 회전하는 걸 만들겠다 일단 보류-->
+            <ImageView
+                android:id="@+id/home_banner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/home_search_bar"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/banner" />
+
+            <!-- exclusive_offer -->
+            <RelativeLayout
+                android:id="@+id/exclusive_offer"
+                android:layout_below="@+id/home_banner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato_black"
+                    android:text="Exclusive Offer"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="See all"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/lato_regular"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/main_color"/>
+
+            </RelativeLayout>
+
+            <!--exclusive_offer recycler view-->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/exclusive_offer_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="245dp"
+                android:layout_below="@+id/exclusive_offer"
+                android:layout_marginBottom="15dp" />
+
+            <!--best selling-->
+            <RelativeLayout
+                android:id="@+id/best_selling"
+                android:layout_below="@+id/exclusive_offer_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato_black"
+                    android:text="Best Selling"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="See all"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/lato_regular"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/main_color"/>
+
+            </RelativeLayout>
+
+            <!--best selling recycler view-->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/best_selling_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="245dp"
+                android:layout_below="@+id/best_selling"
+                android:layout_marginBottom="15dp" />
+
+            <!--Groceries-->
+            <RelativeLayout
+                android:id="@+id/groceries"
+                android:layout_below="@+id/best_selling_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato_black"
+                    android:text="Groceries"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="See all"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/lato_regular"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/main_color"/>
+
+            </RelativeLayout>
+
+            <!--Groceries recycler view 가로-->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/Groceries_recycler1"
+                android:layout_below="@+id/groceries"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="15dp"/>
+
+            <!--Groceries recycler view 세로-->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/Groceries_recycler2"
+                android:layout_below="@+id/Groceries_recycler1"
+                android:layout_width="match_parent"
+                android:layout_height="245dp"
+                android:layout_marginBottom="60dp"/>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/whitetopround"
+        android:elevation="15dp">
+
+        <RelativeLayout
+            android:id="@+id/cartLayout"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:padding="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:layout_marginRight="20dp"
-                android:src="@drawable/search_icon" />
-
-        </RelativeLayout>
-
-        <!--여기에 회전하는 걸 만들겠다 일단 보류-->
-        <ImageView
-            android:id="@+id/home_banner"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/home_search_bar"
-            android:layout_marginTop="15dp"
-            android:src="@drawable/banner" />
-
-        <!-- exclusive_offer -->
-        <RelativeLayout
-            android:id="@+id/exclusive_offer"
-            android:layout_below="@+id/home_banner"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:layout_marginBottom="15dp">
+                android:id="@+id/cart"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/undermenu_3" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/lato_black"
-                android:text="Exclusive Offer"
+                android:layout_below="@id/cart"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/lato_bold"
+                android:text="Cart"
+                android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="20sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:text="See all"
-                android:textSize="15sp"
-                android:fontFamily="@font/lato_regular"
-                android:layout_centerVertical="true"
-                android:textColor="@color/main_color"/>
+                android:textSize="13dp" />
 
         </RelativeLayout>
 
-        <!--exclusive_offer recycler view-->
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/exclusive_offer_recyclerview"
-            android:layout_width="match_parent"
-            android:layout_height="245dp"
-            android:layout_below="@+id/exclusive_offer"
-            android:layout_marginBottom="15dp" />
-
-        <!--best selling-->
         <RelativeLayout
-            android:id="@+id/best_selling"
-            android:layout_below="@+id/exclusive_offer_recyclerview"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:layout_marginBottom="15dp">
+            android:id="@+id/exploreLayout"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:padding="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/cartLayout"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/explore"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/undermenu_2" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/lato_black"
-                android:text="Best Selling"
+                android:layout_below="@id/explore"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/lato_bold"
+                android:text="Explore"
+                android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="20sp" />
+                android:textSize="13dp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:text="See all"
-                android:textSize="15sp"
-                android:fontFamily="@font/lato_regular"
-                android:layout_centerVertical="true"
-                android:textColor="@color/main_color"/>
 
         </RelativeLayout>
 
-        <!--best selling recycler view-->
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/best_selling_recycler"
-            android:layout_width="match_parent"
-            android:layout_height="245dp"
-            android:layout_below="@+id/best_selling"
-            android:layout_marginBottom="15dp" />
 
-        <!--Groceries-->
         <RelativeLayout
-            android:id="@+id/groceries"
-            android:layout_below="@+id/best_selling_recycler"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:layout_marginBottom="15dp">
+            android:id="@+id/shopLayout"
+            android:layout_width="73dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:padding="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/exploreLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/shop"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:tint="@color/main_color"
+                android:src="@drawable/undermenu_1" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/lato_black"
-                android:text="Groceries"
-                android:textColor="@color/black"
-                android:textSize="20sp" />
+                android:layout_below="@id/shop"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/lato_bold"
+                android:text="Shop"
+                android:textAlignment="center"
+                android:textColor="@color/main_color"
+                android:textSize="13dp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:text="See all"
-                android:textSize="15sp"
-                android:fontFamily="@font/lato_regular"
-                android:layout_centerVertical="true"
-                android:textColor="@color/main_color"/>
 
         </RelativeLayout>
 
-        <!--Groceries recycler view 가로-->
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/Groceries_recycler1"
-            android:layout_below="@+id/groceries"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:layout_marginBottom="15dp"/>
+        <RelativeLayout
+            android:id="@+id/favoriteLayout"
+            android:layout_width="73dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:padding="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/cartLayout"
+            app:layout_constraintTop_toTopOf="parent">
 
-        <!--Groceries recycler view 세로-->
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/Groceries_recycler2"
-            android:layout_below="@+id/Groceries_recycler1"
-            android:layout_width="match_parent"
-            android:layout_height="245dp"
-            android:layout_marginBottom="60dp"/>
+            <ImageView
+                android:id="@+id/favorite"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/undermenu_4" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/favorite"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/lato_bold"
+                android:text="Favorite"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="13dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/accountLayout"
+            android:layout_width="73dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:padding="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/favoriteLayout"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/account"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:tint="@color/black"
+                android:src="@drawable/undermenu_5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/account"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/lato_bold"
+                android:text="Account"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="13dp" />
+
+        </RelativeLayout>
 
 
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-
-
-    </RelativeLayout>
-
-
-
-</ScrollView>
+</RelativeLayout>

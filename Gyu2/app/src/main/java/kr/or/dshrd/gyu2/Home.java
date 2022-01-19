@@ -4,11 +4,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
+import android.view.View;
 import android.view.WindowManager;
+import android.widget.RelativeLayout;
 
 import java.util.ArrayList;
 
@@ -26,6 +29,8 @@ public class Home extends AppCompatActivity {
     RecyclerView exclusive_offer_recyclerview, best_selling_recycler, Groceries_recycler1, Groceries_recycler2;
     RecyclerView.Adapter adapter;
 //    private GradientDrawable color1, color2, color3, color4;
+    RelativeLayout shop, explore, cart, favorite, account;
+
 
 
     @Override
@@ -33,6 +38,52 @@ public class Home extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_home);
+
+
+//        shop = findViewById(R.id.shopLayout);
+//        shop.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(Explore.this, Home.class);
+//                startActivity(intent);
+//            }
+//        });
+
+        explore = findViewById(R.id.exploreLayout);
+        explore.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Home.this, Explore.class);
+                startActivity(intent);
+            }
+        });
+
+        cart = findViewById(R.id.cartLayout);
+        cart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Home.this, MyCart.class);
+                startActivity(intent);
+            }
+        });
+
+        favorite = findViewById(R.id.favoriteLayout);
+        favorite.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Home.this, Favorite.class);
+                startActivity(intent);
+            }
+        });
+
+        account = findViewById(R.id.accountLayout);
+        account.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Home.this, Account.class);
+                startActivity(intent);
+            }
+        });
 
         //Hooks
         exclusive_offer_recyclerview = findViewById(R.id.exclusive_offer_recyclerview);

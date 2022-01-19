@@ -270,6 +270,9 @@
                 android:textColor="@color/white"
                 android:textAlignment="center"
                 android:fontFamily="@font/lato_bold"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
                 android:textSize="20sp"/>
 
 

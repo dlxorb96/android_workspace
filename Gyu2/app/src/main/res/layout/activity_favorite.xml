@@ -414,6 +414,7 @@
         </RelativeLayout>
         <!--버튼-->
         <TextView
+            android:id="@+id/toCart2"
             android:clickable="true"
             android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground"

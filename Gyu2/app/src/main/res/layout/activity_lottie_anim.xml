@@ -60,11 +60,14 @@ it’s way to being processed"
 
 
         <TextView
-            android:id="@+id/test2"
+            android:id="@+id/track"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/test1"
-            android:layout_margin="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
             android:background="@drawable/onboarding_get_started"
             android:clickable="true"
             android:focusable="true"
@@ -78,9 +81,10 @@ it’s way to being processed"
 
 
         <TextView
+            android:id="@+id/backToHome"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/test2"
+            android:layout_below="@+id/track"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="20dp"

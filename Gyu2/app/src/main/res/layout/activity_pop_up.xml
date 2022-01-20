@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="10dp"
+    tools:context=".PopUp">
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato_black"
+            android:text="Checkout"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:id="@+id/pop_close"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="10dp"
+            android:src="@drawable/close"
+            android:tint="@color/black" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#404040"
+            android:fontFamily="@font/lato_regular"
+            android:textSize="18dp"
+            android:text="Delivery" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:textSize="14dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/right1"
+            android:fontFamily="@font/lato_regular"
+            android:text="Select Method"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/right1"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/right_arrow"/>
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato_regular"
+            android:text="Pament"
+            android:textColor="#404040"
+            android:textSize="18dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/card"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/right1"
+            android:fontFamily="@font/lato_regular"
+            android:text="Select Method"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/right1"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/right_arrow"/>
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato_regular"
+            android:text="Promo Code"
+            android:textColor="#404040"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@id/right1"
+            android:fontFamily="@font/lato_regular"
+            android:text="Pick discount"
+            android:textColor="@color/black"
+            android:textSize="14dp" />
+
+        <ImageView
+            android:id="@+id/right1"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/right_arrow"/>
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato_regular"
+            android:text="Total Cost"
+            android:textColor="#404040"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@id/right1"
+            android:fontFamily="@font/lato_regular"
+            android:text="$13.97"
+            android:textColor="@color/black"
+            android:textSize="14dp" />
+
+        <ImageView
+            android:id="@+id/right1"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/right_arrow"/>
+
+
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:textSize="11dp"
+        android:fontFamily="@font/lato_regular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="By placing an order you agree to our"/>
+
+    <TextView
+        android:textSize="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Terms And Conditions"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/pop_btn"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/onboarding_get_started"
+        android:padding="20dp"
+        android:text="Place Order"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:fontFamily="@font/lato_bold"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:textSize="20sp"
+        android:layout_marginBottom="20dp"/>
+
+
+
+
+
+
+
+
+</LinearLayout>

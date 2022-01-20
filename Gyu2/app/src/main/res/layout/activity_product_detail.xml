@@ -25,11 +25,15 @@
                 android:layout_marginTop="10dp">
 
                 <ImageView
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:id="@+id/backArrow2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/back_arrow"
                     android:layout_centerVertical="true"
-                    android:padding="10dp"/>
+                    android:padding="10dp"
+                    android:src="@drawable/back_arrow" />
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -261,6 +265,7 @@
             </RelativeLayout>
 
             <TextView
+                android:id="@+id/toCart"
                 android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

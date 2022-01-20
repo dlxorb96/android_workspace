@@ -6,10 +6,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 public class Favorite extends AppCompatActivity {
 
     RelativeLayout shop, explore, cart, account;
+    TextView toCart2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,6 +63,13 @@ public class Favorite extends AppCompatActivity {
             }
         });
 
-
+        toCart2 = findViewById(R.id.toCart2);
+        toCart2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Favorite.this, MyCart.class);
+                startActivity(intent);
+            }
+        });
     }
 }

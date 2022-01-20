@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.LinearLayout;
@@ -18,6 +19,8 @@ public class LottieAnim extends AppCompatActivity {
     Animation botanim;
     RelativeLayout apptitle;
     LottieAnimationView lottie;
+    TextView track;
+    TextView backToHome;
 
 
     @Override
@@ -27,6 +30,24 @@ public class LottieAnim extends AppCompatActivity {
         botanim= AnimationUtils.loadAnimation(this,R.anim.lottiebottom_animation);
         apptitle = findViewById(R.id.lottie_relative);
         apptitle.setAnimation(botanim);
+
+
+        backToHome = findViewById(R.id.backToHome);
+        backToHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LottieAnim.this, Home.class);
+                startActivity(intent);
+            }
+        });
+        track = findViewById(R.id.track);
+        track.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LottieAnim.this, GoogleMap.class);
+                startActivity(intent);
+            }
+        });
 
 
         //hooks

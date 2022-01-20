@@ -46,14 +46,15 @@
             android:textSize="20sp"/>
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:layout_width="92dp"
-            android:layout_height="77dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:layout_alignParentRight="true"
             android:layout_alignParentBottom="true"
             android:backgroundTint="@color/main_color"
             android:baselineAlignBottom="false"
             android:src="@drawable/plus"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            app:fabCustomSize="30dp" />
 
 
 

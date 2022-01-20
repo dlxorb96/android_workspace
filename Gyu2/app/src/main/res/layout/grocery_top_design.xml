@@ -31,7 +31,7 @@
             android:layout_toRightOf="@id/grocery_top_design_image"
             android:fontFamily="@font/lato_black"
             android:text="pulses"
-            android:textColor="@color/black"
+            android:textColor="#353535"
             android:textSize="25sp" />
 
 

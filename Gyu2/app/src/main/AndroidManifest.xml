@@ -10,10 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Gyu2">
         <activity
+            android:name=".Home"
+            android:exported="false" />
+        <activity
+            android:name=".PopUp"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/popupTheme" />
+        <activity
             android:name=".MyCart"
             android:exported="false" />
         <activity
-            android:name=".Home"
+            android:name=".GoogleMap"
             android:exported="false" />
         <activity
             android:name=".Beverage"

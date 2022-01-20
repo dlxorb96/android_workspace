@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_test"
     android:layout_margin="5dp"
     android:layout_marginRight="10dp"
     app:cardElevation="5dp"
@@ -46,17 +47,15 @@
             android:textSize="20sp"/>
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:layout_width="92dp"
-            android:layout_height="77dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:fabCustomSize="30dp"
             android:layout_alignParentRight="true"
             android:layout_alignParentBottom="true"
             android:backgroundTint="@color/main_color"
             android:baselineAlignBottom="false"
             android:src="@drawable/plus"
             android:textColor="@color/white" />
-
-
-
         
     </RelativeLayout>
 

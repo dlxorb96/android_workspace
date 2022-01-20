@@ -1,6 +1,7 @@
 package HelperClass;
 
 
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,10 +10,13 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
+import kr.or.dshrd.gyu2.Home;
+import kr.or.dshrd.gyu2.ProductDetail;
 import kr.or.dshrd.gyu2.R;
 
 public class BestSellingAdapter extends RecyclerView.Adapter<BestSellingAdapter.BestSellingViewHolder> {

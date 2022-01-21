@@ -1,0 +1,623 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyCart">
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--favorite-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Favorite"
+            android:textSize="25sp"
+            android:fontFamily="@font/lato_bold"
+            android:textColor="@color/black"/>
+
+        <!--라인-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/line"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"/>
+
+        <!--first item box-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--cart image-->
+            <ImageView
+                android:id="@+id/coca_image"
+                android:layout_width="91dp"
+                android:layout_height="85dp"
+                android:layout_marginRight="10dp"
+                android:padding="10dp"
+                android:src="@drawable/beverage_2" />
+            <!--product name-->
+            <TextView
+                android:id="@+id/coca_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/coca_image"
+                android:fontFamily="@font/lato_bold"
+                android:text="Coca Cola Can"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+            <!--kg/price-->
+            <TextView
+                android:id="@+id/coca_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/coca_title"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/coca_image"
+                android:fontFamily="@font/lato_regular"
+                android:text="325ml, Price"
+                android:textColor="@color/gray"
+                android:textSize="15sp" />
+
+            <!--엑스표-->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/close"
+                android:layout_alignParentRight="true"
+                android:padding="10dp"/>
+            <!--가격-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/lato_black"
+                android:text="$4.99"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+
+        </RelativeLayout>
+
+        <!--라인-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/line"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"/>
+
+        <!--first item box-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--cart image-->
+            <ImageView
+                android:id="@+id/pepsi_image"
+                android:layout_width="91dp"
+                android:layout_height="85dp"
+                android:layout_marginRight="10dp"
+                android:padding="10dp"
+                android:src="@drawable/beverage_1" />
+            <!--product name-->
+            <TextView
+                android:id="@+id/pepsi_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/pepsi_image"
+                android:fontFamily="@font/lato_bold"
+                android:text="Pepsi Coke Can"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+            <!--kg/price-->
+            <TextView
+                android:id="@+id/pepsi_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pepsi_title"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/pepsi_image"
+                android:fontFamily="@font/lato_regular"
+                android:text="330ml, Price"
+                android:textColor="@color/gray"
+                android:textSize="15sp" />
+
+            <!--엑스표-->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/close"
+                android:layout_alignParentRight="true"
+                android:padding="10dp"/>
+            <!--가격-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$4.99"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="60dp"
+                android:textSize="20sp"
+                android:fontFamily="@font/lato_black"
+                android:textColor="@color/black"/>
+
+
+        </RelativeLayout>
+
+        <!--라인-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/line"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"/>
+
+        <!--first item box-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--cart image-->
+            <ImageView
+                android:id="@+id/apple_image"
+                android:layout_width="91dp"
+                android:layout_height="85dp"
+                android:layout_marginRight="10dp"
+                android:padding="10dp"
+                android:src="@drawable/beverage_3" />
+            <!--product name-->
+            <TextView
+                android:id="@+id/apple_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/apple_image"
+                android:fontFamily="@font/lato_bold"
+                android:text="Apple, Grape Juice"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+            <!--kg/price-->
+            <TextView
+                android:id="@+id/apple_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/apple_title"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/apple_image"
+                android:fontFamily="@font/lato_regular"
+                android:text="2L, Price"
+                android:textColor="@color/gray"
+                android:textSize="15sp" />
+
+            <!--엑스표-->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/close"
+                android:layout_alignParentRight="true"
+                android:padding="10dp"/>
+            <!--가격-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/lato_black"
+                android:text="$15.50"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+
+        </RelativeLayout>
+
+        <!--라인-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/line"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"/>
+        <!--second item box-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--cart image-->
+            <ImageView
+                android:id="@+id/egg_image"
+                android:layout_width="91dp"
+                android:layout_height="85dp"
+                android:padding="10dp"
+                android:src="@drawable/egg"
+                android:layout_marginRight="10dp"/>
+            <!--product name-->
+            <TextView
+                android:id="@+id/egg_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/egg_image"
+                android:fontFamily="@font/lato_bold"
+                android:text="Egg Chicken Red"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+            <!--kg/price-->
+            <TextView
+                android:id="@+id/egg_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/egg_title"
+                android:layout_toRightOf="@+id/egg_image"
+                android:text="4pcs, Price"
+                android:fontFamily="@font/lato_regular"
+                android:textColor="@color/gray"
+                android:textSize="15sp"
+                android:layout_marginTop="5dp" />
+
+            <!--엑스표-->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/close"
+                android:layout_alignParentRight="true"
+                android:padding="10dp"/>
+            <!--가격-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/lato_black"
+                android:text="$1.99"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+
+        </RelativeLayout>
+
+        <!--라인-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/line"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"/>
+        <!--third item box-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--cart image-->
+            <ImageView
+                android:id="@+id/Banana_image"
+                android:layout_width="91dp"
+                android:layout_height="85dp"
+                android:layout_marginRight="10dp"
+                android:padding="10dp"
+                android:src="@drawable/banana" />
+            <!--product name-->
+            <TextView
+                android:layout_toRightOf="@+id/Banana_image"
+                android:id="@+id/Banana_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Organic Bananas"
+                android:fontFamily="@font/lato_bold"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+            <!--kg/price-->
+            <TextView
+                android:id="@+id/Banana_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Banana_title"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/Banana_image"
+                android:fontFamily="@font/lato_regular"
+                android:text="12kg, Price"
+                android:textColor="@color/gray"
+                android:textSize="15sp" />
+
+            <!--엑스표-->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/close"
+                android:layout_alignParentRight="true"
+                android:padding="10dp"/>
+            <!--가격-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/lato_black"
+                android:text="$3.00"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+
+        </RelativeLayout>
+
+        <!--라인-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/line"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"/>
+        <!--fourth item box-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--cart image-->
+            <ImageView
+                android:id="@+id/ginger_image"
+                android:layout_width="91dp"
+                android:layout_height="85dp"
+                android:layout_marginRight="10dp"
+                android:padding="10dp"
+                android:src="@drawable/ginger" />
+
+            <!--product name-->
+            <TextView
+                android:id="@+id/ginger_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/ginger_image"
+                android:fontFamily="@font/lato_bold"
+                android:text="Ginger"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <!--kg/price-->
+            <TextView
+                android:id="@+id/ginger_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ginger_title"
+                android:layout_toRightOf="@+id/ginger_image"
+                android:text="250gm, Price"
+                android:fontFamily="@font/lato_regular"
+                android:textColor="@color/gray"
+                android:textSize="15sp"
+                android:layout_marginTop="5dp" />
+
+            <!--엑스표-->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/close"
+                android:layout_alignParentRight="true"
+                android:padding="10dp"/>
+
+            <!--가격-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/lato_black"
+                android:text="$2.99"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+
+        </RelativeLayout>
+        <!--버튼-->
+        <TextView
+            android:id="@+id/toCart2"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/onboarding_get_started"
+            android:padding="20dp"
+            android:text="Add All To Cart"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:fontFamily="@font/lato_bold"
+            android:layout_marginBottom="80dp"
+            android:textSize="20sp"/>
+
+
+
+    </LinearLayout>
+
+
+    </ScrollView>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/whitetopround"
+        android:elevation="15dp">
+
+        <RelativeLayout
+            android:id="@+id/cartLayout"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:padding="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/cart"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/undermenu_3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cart"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/lato_bold"
+                android:text="Cart"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="13dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/exploreLayout"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:padding="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/cartLayout"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/explore"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/undermenu_2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/explore"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/lato_bold"
+                android:text="Explore"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="13dp" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/shopLayout"
+            android:layout_width="73dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:padding="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/exploreLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/shop"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/undermenu_1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/shop"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/lato_bold"
+                android:text="Shop"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="13dp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/favoriteLayout"
+            android:layout_width="73dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:padding="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/cartLayout"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/favorite"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:tint="@color/main_color"
+                android:src="@drawable/undermenu_4" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/favorite"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/lato_bold"
+                android:text="Favorite"
+                android:textAlignment="center"
+                android:textColor="@color/main_color"
+                android:textSize="13dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/accountLayout"
+            android:layout_width="73dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:padding="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/favoriteLayout"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/account"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:tint="@color/black"
+                android:src="@drawable/undermenu_5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/account"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/lato_bold"
+                android:text="Account"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="13dp" />
+
+        </RelativeLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
